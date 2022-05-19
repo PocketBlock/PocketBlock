@@ -25,7 +25,7 @@ This project is still being developed
 // For the first start run this, then you can run npm start
 $ npm run firstStart
 
-// If you already have the dependeices
+// If you already have the dependencies
 $ npm start
 ```
 
