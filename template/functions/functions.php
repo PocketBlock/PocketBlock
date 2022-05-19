@@ -51,15 +51,12 @@ public function onPlayerChat(PlayerChatEvent $event) {
 #==Start
 # @category = Player Events
 # @imports = pocketmine\event\player\PlayerDeathEvent
-# @function = $event->setMessage(["field_variable", "String"]);|setMessage| set Message
-# @function = $event->setFormat(["field_variable", "String"]);|setFormat| set Format
+# @function = $event->setDeathMessage(["field_variable", "String"]);|setDeathMessage| set DeathMessage
 # @function = $event->cancel();|cancelevent| Cancel event
-public function onPlayerChat(PlayerChatEvent $event) {
+public function onPlayerDeath(PlayerDeathEvent $event) {
 
 	$player = $event->getPlayer();
-	$playerName = $player->getName();
-	$message = $event->getMessage();
-	$format = $event->getFormat();
+	$deathMessage = $event->getDeathMessage();
 
 
 %1

@@ -14,7 +14,7 @@ module.exports = class discordRPC {
             this.client.setActivity(
                 {
                     details: "Working on a plugin",
-                    state: "Time: 0mins",
+                    state: "",
 
                     largeImageKey: "enlarged-image",
                     buttons :
@@ -37,12 +37,12 @@ module.exports = class discordRPC {
 
             this.client.setActivity({
                 details: `Working on ${arg}`,
-                state: "0 min",
+                state: "",
 
                 largeImageKey: "enlarged-image",
                 buttons : [
                     {
-                        label : "Download PocketBlock", url: "https://example.com"
+                        label : "Download PocketBlock", url: "https://github.com/PocketBlock/PocketBlock"
                     }
                 ]
             });
