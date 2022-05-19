@@ -17,6 +17,17 @@ PocketBlock is a visual language; designed for simplicity and made to teach the 
 ## IMPORTANT
 This project is still being developed
 
+## How to run:
+
+### Windows, and possibly MacOS?
+```
+// For the first start run this, then you can run npm start
+$ npm run firstStart
+
+// If you already have the dependeices
+$ npm start
+```
+
 ## Tested Platforms
 | Platform | Tested? |
 |----------|---------|
