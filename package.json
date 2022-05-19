@@ -1,0 +1,22 @@
+{
+  "name": "pocketblock",
+  "version": "1.0.0",
+  "description": "Make plugins using Drag and Drop!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "electron ."
+  },
+  "type": "commonjs",
+  "author": "PocketBlock",
+  "license": "MIT",
+  "dependencies": {
+    "blockly": "^8.0.0",
+    "discord-rpc": "^4.0.1",
+    "phar": "^1.8.0",
+    "zip-dir": "^2.0.0"
+  },
+  "devDependencies": {
+    "electron": "^18.0.3"
+  }
+}

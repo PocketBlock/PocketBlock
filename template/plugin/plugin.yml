@@ -1,0 +1,7 @@
+---
+name: PocketBlock
+version: 1.0.0
+main: PocketBlock\Plugin\Main
+api: 4.0.0
+src-namespace-prefix: PocketBlock\Plugin
+...
