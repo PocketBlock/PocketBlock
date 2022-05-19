@@ -1,4 +1,4 @@
-<div style="text-align: center">
+<div align="center">
     <br/>
     <img width="200px" alt="Minimal Minecraft Icon" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6138c88e-da4f-47c0-8f03-f2a2bae031a6/d99v1uk-b3b3933c-396d-484f-8b0a-d3b82253c3fe.png">
     <h1 style="margin-top: 0;font-size: xxx-large">PocketBlock</h1>
