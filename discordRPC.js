@@ -14,7 +14,7 @@ module.exports = class discordRPC {
             this.client.setActivity(
                 {
                     details: "Working on a plugin",
-                    state: "",
+                    state: "        ",
 
                     largeImageKey: "enlarged-image",
                     buttons :
@@ -38,7 +38,7 @@ module.exports = class discordRPC {
             if(this.client.user == null) return;
             await this.client.setActivity({
                 details: `Working on ${arg}`,
-                state: "",
+                state: "        ",
 
                 largeImageKey: "enlarged-image",
                 buttons: [

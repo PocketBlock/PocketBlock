@@ -37,7 +37,7 @@ Blockly.Blocks["playerGet"] = {
  * @returns {(string|number|*)[]}
  */
 Blockly.PHP["playerGet"] = function (block) {
-    return `     $player->${block.getFieldValue("type")}()`;
+    return `     $player->${block.getFieldValue("type")}();`;
 }
 
 // ===================================================================
@@ -97,7 +97,7 @@ Blockly.Blocks["playerIs"] = {
  * @returns {(string|number|*)[]}
  */
 Blockly.PHP["playerIs"] = function (block) {
-    return `     $player->${block.getFieldValue("type")}()`;
+    return `     $player->${block.getFieldValue("type")}();`;
 }
 // ===================================================================================
 // Player Do
@@ -136,7 +136,7 @@ Blockly.Blocks["playerDo"] = {
  * @returns {(string|number|*)[]}
  */
 Blockly.PHP["playerDo"] = function (block) {
-    return `     $player->${block.getFieldValue("type")}()`;
+    return `     $player->${block.getFieldValue("type")}();`;
 }
 // ===================================================================================
 // Player Toggle
@@ -184,7 +184,7 @@ Blockly.Blocks["playerToggle"] = {
  * @returns {(string|number|*)[]}
  */
 Blockly.PHP["playerToggle"] = function (block) {
-    return `     $player->${block.getFieldValue("type")}(${block.getFieldValue("boolList")})`;
+    return `     $player->${block.getFieldValue("type")}(${block.getFieldValue("boolList")});`;
 }
 
 // Player do text
@@ -233,7 +233,7 @@ Blockly.Blocks["playerDoText"] = {
  * @returns {(string|number|*)[]}
  */
 Blockly.PHP["playerDoText"] = function (block) {
-    if (block.childBlocks_.length === 0) return `     $player->${block.getFieldValue("type")}("")`;
+    if (block.childBlocks_.length === 0) return `     $player->${block.getFieldValue("type")}("");`;
 
     return '     $player->'+block.getFieldValue("type")+'(' + Blockly.PHP.valueToCode(block, 'VALUE', Blockly.PHP.ORDER_NONE) + ')';
 }
@@ -284,6 +284,6 @@ Blockly.Blocks["playerTransfer"] = {
  * @returns {(string|number|*)[]}
  */
 Blockly.PHP["playerTransfer"] = function (block) {
-    return `     $player->transfer("${block.getFieldValue("ip")}", ${block.getFieldValue("port")}, "${block.getFieldValue("message")}")`;
+    return `     $player->transfer("${block.getFieldValue("ip")}", ${block.getFieldValue("port")}, "${block.getFieldValue("message")}");`;
 }
 // ==============================
