@@ -4,7 +4,7 @@
   "description": "Make plugins using Drag and Drop!",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js",
+    "test": "electron .",
     "start": "electron .",
     "firstStart": "npm install &electron ."
   },
