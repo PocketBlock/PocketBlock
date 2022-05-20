@@ -6,7 +6,7 @@
   "scripts": {
     "test": "electron .",
     "start": "electron .",
-    "firstStart": "npm install &electron .",
+    "firstStart": "npm install && electron .",
     "build": "electron-builder build --mac"
   },
   "type": "commonjs",
