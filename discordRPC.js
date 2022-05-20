@@ -35,6 +35,7 @@ module.exports = class discordRPC {
 
         this.ipcMain.handle("pluginNameChanged", async (event, arg) => {
 
+            if(this.client.user == null) return;
             await this.client.setActivity({
                 details: `Working on ${arg}`,
                 state: "",
