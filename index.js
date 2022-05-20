@@ -2,6 +2,13 @@ const {app, BrowserWindow, dialog, ipcMain, Menu, Tray} = require('electron');
 const path = require('path');
 const fs = require('fs');
 const discordRPC = require("./discordRPC");
+const logger = require("./logger.js");
+
+if(ipcMain === undefined) {
+    logger.error("App is being ran by node index.js and not electron .");
+    logger.info("Quiting");
+    process.exit();
+}
 
 new discordRPC(ipcMain, "963368466381942814");
 app.disableHardwareAcceleration();
