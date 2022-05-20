@@ -29,20 +29,20 @@ module.exports = class discordRPC {
         });
 
         this.client.login({clientId})
-            .then(status => logger.info("Connected to discord client.", "DiscordRPC"))
+            .then(() => logger.info("Connected to discord client.", "DiscordRPC"))
             .catch(error => logger.error(error.message, "DiscordRPC"));
 
 
-        ipcMain.handle("pluginNameChanged", async (event, arg) => {
+        this.ipcMain.handle("pluginNameChanged", async (event, arg) => {
 
-            this.client.setActivity({
+            await this.client.setActivity({
                 details: `Working on ${arg}`,
                 state: "",
 
                 largeImageKey: "enlarged-image",
-                buttons : [
+                buttons: [
                     {
-                        label : "Download PocketBlock", url: "https://github.com/PocketBlock/PocketBlock"
+                        label: "Download PocketBlock", url: "https://github.com/PocketBlock/PocketBlock"
                     }
                 ]
             });
