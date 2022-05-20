@@ -37,7 +37,7 @@ Blockly.Blocks["playerGet"] = {
  * @returns {(string|number|*)[]}
  */
 Blockly.PHP["playerGet"] = function (block) {
-    return [`$player->${block.getFieldValue("type")}()`, Blockly.PHP.ORDER_ASSIGNMENT];
+    return `     $player->${block.getFieldValue("type")}()`;
 }
 
 // ===================================================================
@@ -97,7 +97,7 @@ Blockly.Blocks["playerIs"] = {
  * @returns {(string|number|*)[]}
  */
 Blockly.PHP["playerIs"] = function (block) {
-    return [`$player->${block.getFieldValue("type")}()`, Blockly.PHP.ORDER_ASSIGNMENT];
+    return `     $player->${block.getFieldValue("type")}()`;
 }
 // ===================================================================================
 // Player Do
@@ -136,7 +136,7 @@ Blockly.Blocks["playerDo"] = {
  * @returns {(string|number|*)[]}
  */
 Blockly.PHP["playerDo"] = function (block) {
-    return [`$player->${block.getFieldValue("type")}()`, Blockly.PHP.ORDER_ASSIGNMENT];
+    return `     $player->${block.getFieldValue("type")}()`;
 }
 // ===================================================================================
 // Player Toggle
@@ -184,7 +184,7 @@ Blockly.Blocks["playerToggle"] = {
  * @returns {(string|number|*)[]}
  */
 Blockly.PHP["playerToggle"] = function (block) {
-    return [`$player->${block.getFieldValue("type")}(${block.getFieldValue("boolList")})`, Blockly.PHP.ORDER_ASSIGNMENT];
+    return `     $player->${block.getFieldValue("type")}(${block.getFieldValue("boolList")})`;
 }
 
 // Player do text
