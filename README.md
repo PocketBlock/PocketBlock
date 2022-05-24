@@ -33,7 +33,7 @@ $ npm start
 | Platform | Tested? |
 |----------|---------|
 | Windows  | ✅      |
-| MacOS    | ❌      |
+| MacOS    | ✅      |
 | Ubuntu   | ❌      |
 
 ## Functions/Events supported:
